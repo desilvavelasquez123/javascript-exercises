@@ -1,8 +1,9 @@
 const convertToCelsius = function(degree) {
- return degree = Math.round((degree - 32) * 5/9);
+ return degree = parseFloat(((degree - 32) * 5/9).toFixed(1));
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(degree) {
+   return degree = parseFloat((degree * (9/5) + 32).toFixed(1));
 };
 
 // Do not edit below this line
